@@ -55,14 +55,16 @@ window.addEventListener('scroll', () => {
   const socialsContainer = document.getElementById('socials-container');
   const scrollPosition = window.scrollY;
 
+  // Add condition to keep icons visible on page load
   if (scrollPosition > 150) {
     socialsContainer.style.opacity = '1';
     socialsContainer.style.transform = 'translateY(0)';
   } else {
-    socialsContainer.style.opacity = '0';
-    socialsContainer.style.transform = 'translateY(50px)';
+    socialsContainer.style.opacity = '1'; // Ensure icons are visible on page load
+    socialsContainer.style.transform = 'translateY(0)'; // Make sure they're in position
   }
 });
+
 
 // Sticky navigation effect on scroll
 window.addEventListener('scroll', () => {

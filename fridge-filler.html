@@ -1,168 +1,118 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Fridge Filler</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="left-sidebar is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fridge Filler Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fridge-filler.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="desktop-nav">
+      <div class="logo">Thesya Gabrielle</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Thesya Gabrielle</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
-			<!-- Header -->
-				<section id="header">
+    <!-- Main Content for Fridge Filler -->
+    <section id="project-details">
+      <div class="container">
+        <h1 class="title">Fridge Filler Mobile App</h1>
 
-					<!-- Logo -->
-					<h1><a href="index.html">Thesya Evania Gabrielle</a></h1>
+        <!-- Use Case Section -->
+        <div class="project-section">
+          <h2>Use Case</h2>
+          <p>
+            In a busy life, shopping lists often become less important, leading to food wastage. People tend to forget updating their shopping lists when they run out of ingredients. Conversely, they may overbuy items they've already purchased, further contributing to waste. This project addresses these issues by helping to reduce food waste.
+          </p>
+        </div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li><a href="about-me.html">About Me</a></li>
-								<li>
-									<a href="#">Contact</a>
-									<ul>
-										<li><a href="mailto: thesya.gabrielle@gmail.com">Email</a></li>
-										<li><a href="https://www.linkedin.com/in/thesya-evania-gabrielle/">LinkedIn</a></li>
-										<li><a href="https://www.instagram.com/thesyaevania/">Instagram</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav>
+        <!-- Aims Section -->
+        <div class="project-section">
+          <h2>Aims</h2>
+          <p>
+            This project aims to create an automatic shopping list by embedding object detection in a mobile application, allowing users to scan their fridge and detect objects inside it more easily. Missing items are automatically updated and stored in the shopping list, helping users manage their food inventory efficiently.
+          </p>
+        </div>
 
-				</section>
+        <!-- About the App Section -->
+        <div class="project-section">
+          <h2>About the App</h2>
+          <p>
+            The application allows users to sign up and create an account to store their fridge inventory. The main screen provides options to view their list, add items, or check the shopping list. The app uses an object detection algorithm integrated with the camera to detect objects in the fridge, which can be added to the list. Users can update their inventory and automatically generate a shopping list for missing items. The data is stored securely in a cloud database (Firebase).
+          </p>
+        </div>
 
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<div class="row">
-							<div class="col-4 col-12-medium">
+        <!-- Video Section -->
+        <div class="project-section video-section">
+          <h2>Demo Video</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/h66js93LscY" title="Fridge Filler Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
-								<!-- Sidebar -->
-									<section class="box">
-										<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-										<header>
-											<h3>Recipe IOS Application</h3>
-										</header>
-										<p>An IOS app that helps you find the perfect recipe with functions that helps you manage your shopping list and your favorite recipes.</p>
-										<footer>
-											<ul class="actions">
-												<li><a href="https://github.com/pamz23/myRecipes" class="button alt">Find out more</a></li>
-											</ul>
-										</footer>
-									</section>
+        <!-- Takeaway Section -->
+        <div class="project-section">
+          <h2>Takeaway</h2>
+          <p>
+            This project was built as part of a deep learning subject with a team of two other members. I focused primarily on the GUI, creating the mobile application in Android Studio using Java. I also integrated machine learning algorithms such as Yolov5, compiled into a TensorFlow model for use in the app. Additionally, I learned to implement Firebase as a cloud database for data storage and retrieval, further enhancing my skills in building machine learning algorithms and mobile applications with integrated object detection and cloud storage.
+          </p>
+        </div>
+      </div>
+    </section>
 
-							</div>
-							<div class="col-8 col-12-medium imp-medium">
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:thesya.gabrielle@gmail.com">thesya.gabrielle@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/thesya-evania-gabrielle/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
 
-								<!-- Content -->
-									<article class="box post">
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-										<header>
-											<h2>Fridge Filler Mobile App</h2>
-											<p>DEEP LEARNING, MACHINE LEARNING, ARTIFICIAL INTELLIGENCE</p>
-										</header>
-										<section>
-											<header>
-												<h3>Use Case</h3>
-											</header>
-											<p>
-												In a busy life, shopping list is consider not an important things to remember. People tend forgot to update their shopping list
-												when their ingredients have run out and kept on forgoting to buy them. On the other hand, people also overbought products that they have bought before
-												as they forgot to update their shopping list. This has led to massive amount of food waste. Food waste has a significant negative environmental impacts
-												and this project aims to help reduce them.
-											</p>
-										</section>
-										<section>
-											<header>
-												<h3>Aims</h3>
-											</header>
-											<p>
-												This project aims to create an automatic shopping list by embedding object detection in a mobile application allowing use to 
-												scan their fridge and detect objects inside their fridge easier than before. It also updates missing items and store it into the shopping list.
-											</p>
-										</section>
-										<section>
-											<header>
-												<h3>About the app</h3>
-											</header>
-											<p>
-												This application is an mobile application. Firstly, user need to sign in and sign up for an account. This account will be used to store the list of
-												things in the fridge. The data will then be stored in a cloud database. In the main screen of the app we have out list, add button, and shopping list button. 
-												To create a list, we can click the add button, which will opens up our camera. The camera have an object detection algorithmns on it. It will then detect the object 
-												inside the firgde, and then we can add the list. We can create another list using the add button. Then, we can view the list by clicking the list box, it will show 
-												the list and there will be a button to update the list. Once we update the list, the app will check the missing items, and we are able to add the missing items into the 
-												shopping list. To open up the shopping list, we just click the cart button.
-											</p>
-											<iframe width="420" height="315"
-												src="https://youtu.be/h66js93LscY">
-											</iframe>	
-										</section>
-										<section>
-											<header>
-												<h3>Take away</h3>
-											</header>
-											<p>
-												In build this project for Deep learning subject with 2 of my other team members. We build the dataset together and annotate them using CVAT.
-												In this project I mostly work on the GUI. Creating a mobile application using Java language in Android Studio. I learn to integrate machine learning algorithmn 
-												into a mobile application. To integrate the app, we compile the baseline of the machine learning algorithm into a tensor flow model, which is embedded
-												into the mobile application. I also learn how to use cloud database, such as Firebase, learning to store and receive informations. Through this project, I have enhance
-												my skills in building machine learning algorithm such as Yolov5, building an android mobile application and integrating object detection and cloud database.
-											</p>
-										</section>
-									</article>
-
-							</div>
-						</div>
-					</div>
-				</section>
-
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<section>
-									<header>
-										<h2>Contact me!</h2>
-									</header>
-									<ul class="social">
-										<li><a class="icon brands fa-instagram" href="https://www.instagram.com/thesyaevania/"><span class="label">Facebook</span></a></li>
-										<li><a class="icon brands fa-youtube" href="#"><span class="label">Twitter</span></a></li>
-										<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/thesya-evania-gabrielle/"><span class="label">LinkedIn</span></a></li>
-									</ul>
-									<ul class="contact">
-										<li>
-											<h3>Mail</h3>
-											<p><a href="mailto:thesyagabrielle@gmail.com">someone@untitled.tld</a></p>
-										</li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-12">
-
-								<!-- Copyright -->
-									<div id="copyright">
-										<ul class="links">
-											<li>&copy; 2023 Thesya Evania Gabrielle</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
-
-							</div>
-						</div>
-					</div>
-				</section>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Thesya Evania Gabrielle. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
 </html>
