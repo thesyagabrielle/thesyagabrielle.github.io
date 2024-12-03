@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fridge Filler Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fridge-filler.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="desktop-nav">
+      <div class="logo">Thesya Gabrielle</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Thesya Gabrielle</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content for Fridge Filler -->
+    <section id="project-details">
+      <div class="container">
+        <h1 class="title">Fridge Filler Mobile App</h1>
+
+        <!-- Use Case Section -->
+        <div class="project-section">
+          <h2>Use Case</h2>
+          <p>
+            In a busy life, shopping lists often become less important, leading to food wastage. People tend to forget updating their shopping lists when they run out of ingredients. Conversely, they may overbuy items they've already purchased, further contributing to waste. This project addresses these issues by helping to reduce food waste.
+          </p>
+        </div>
+
+        <!-- Aims Section -->
+        <div class="project-section">
+          <h2>Aims</h2>
+          <p>
+            This project aims to create an automatic shopping list by embedding object detection in a mobile application, allowing users to scan their fridge and detect objects inside it more easily. Missing items are automatically updated and stored in the shopping list, helping users manage their food inventory efficiently.
+          </p>
+        </div>
+
+        <!-- About the App Section -->
+        <div class="project-section">
+          <h2>About the App</h2>
+          <p>
+            The application allows users to sign up and create an account to store their fridge inventory. The main screen provides options to view their list, add items, or check the shopping list. The app uses an object detection algorithm integrated with the camera to detect objects in the fridge, which can be added to the list. Users can update their inventory and automatically generate a shopping list for missing items. The data is stored securely in a cloud database (Firebase).
+          </p>
+        </div>
+
+        <!-- Video Section -->
+        <div class="project-section video-section">
+          <h2>Demo Video</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/h66js93LscY" title="Fridge Filler Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Takeaway Section -->
+        <div class="project-section">
+          <h2>Takeaway</h2>
+          <p>
+            This project was built as part of a deep learning subject with a team of two other members. I focused primarily on the GUI, creating the mobile application in Android Studio using Java. I also integrated machine learning algorithms such as Yolov5, compiled into a TensorFlow model for use in the app. Additionally, I learned to implement Firebase as a cloud database for data storage and retrieval, further enhancing my skills in building machine learning algorithms and mobile applications with integrated object detection and cloud storage.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:thesya.gabrielle@gmail.com">thesya.gabrielle@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/thesya-evania-gabrielle/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Thesya Evania Gabrielle. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
