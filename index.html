@@ -1,350 +1,193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="decription" content="Thesya Gabrielle Portfolio"/>
-    <meta name="keywords" content="Thesya Gabrielle, Thesya, Gabrielle, Portfolio"/>
-    <meta name="author" content="Thesya Evania Gabrielle"/>
-    <title>Thesya Gabrielle Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Thesya Gabrielle</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Thesya Gabrielle</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="images/profile-pic.png" alt="Thesya Gabrielle profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Thesya Gabrielle</h1>
-        <p class="section__text__p2">Computing Science Graduate | AI Enthusiast
-        </p>
-        <div class="btn-container">
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="images/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/thesya-evania-gabrielle'"
-          />
-          <img
-            src="images/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="images/grad_pic2.JPG"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="images/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>CSIRO Data61 and Pawsey Supercomputing Centre<br />Research Intern</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="images/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelor of Computing Science (Honours)<br />
-            Majoring in Artificial Intelligence and Data Analytics</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Recent graduate with a Bachelor of Computing Science (Honours) degree from University of Technology Sydney with First Class Honours.
-              Majoring in Artificial Intelligence and Data Analytics and deeply passionate about technology and inovation. Enjoys playing musical
-              instruments, such as drums and guitar as a hobby, Feel free to connect with me!!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Analytics and Visualisation</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tableau</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PowerBI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Machine Learning</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Deep Learning</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Other</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Microsoft Office</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="images/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thesya Gabrielle — Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0e0a1f;           /* deep space */
+      --bg2:#1a1038;          /* vignette */
+      --grid:#241b4b;         /* subtle grid */
+      --neon:#38f499;         /* mint neon */
+      --magenta:#ff3ea5;      /* hot magenta */
+      --amber:#ffd166;        /* retro amber */
+      --white:#e8e8ff;        /* soft white */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      color:var(--white);
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 50% 120%, var(--bg2) 0%, var(--bg) 55%, #06040f 100%),
+        linear-gradient(180deg, rgba(255,62,165,.06), transparent 30%),
+        repeating-linear-gradient(0deg, var(--grid), var(--grid) 1px, transparent 1px, transparent 40px),
+        repeating-linear-gradient(90deg, #1b1340, #1b1340 1px, transparent 1px, transparent 40px);
+      background-blend-mode: screen, normal, overlay, overlay;
+      overflow:hidden;
+    }
+
+    /* Scanline + noise overlay */
+    body::before{
+      content:"";
+      position:fixed; inset:0;
+      background:
+        repeating-linear-gradient(0deg, rgba(255,255,255,.03) 0 2px, rgba(0,0,0,.03) 2px 4px);
+      mix-blend-mode:overlay; pointer-events:none; opacity:.5;
+      animation: flicker 4s infinite steps(60);
+    }
+    body::after{
+      content:""; position:fixed; inset:-50% -50%;
+      background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.05"/></svg>');
+      opacity:.35; pointer-events:none; animation: grain 12s steps(10) infinite;
+    }
+    @keyframes grain{ to{ transform:translate3d(-10%,10%,0) } }
+    @keyframes flicker{ 0%,19%,21%,23%,25%,54%,56%,100%{opacity:.5} 20%,24%,55%{opacity:.35} }
+
+    .wrap{
+      position:relative; inset:0; height:100dvh; display:grid; place-items:center; padding:2rem;
+    }
+    .crt{
+      width:min(880px, 92vw);
+      border-radius:20px; padding:2.2rem; position:relative;
+      background: linear-gradient(180deg, rgba(255,62,165,.08), rgba(56,244,153,.08));
+      box-shadow:
+        0 0 0 2px rgba(255,62,165,.35) inset,
+        0 0 32px rgba(56,244,153,.25),
+        0 20px 80px rgba(0,0,0,.6);
+      isolation:isolate;
+    }
+    .crt::before{
+      content:""; position:absolute; inset:0; border-radius:20px;
+      background: radial-gradient(120% 80% at 50% -5%, rgba(255,255,255,.15), transparent 60%);
+      mix-blend-mode:screen; pointer-events:none;
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:1rem; margin-bottom:1.25rem;
+    }
+    .logo{
+      width:44px; height:44px; border-radius:12px; display:grid; place-items:center;
+      background:linear-gradient(135deg, var(--magenta), var(--neon));
+      box-shadow:0 0 24px rgba(255,62,165,.55), 0 0 24px rgba(56,244,153,.35) inset;
+      transform:rotate(-6deg);
+      font-family:"Press Start 2P", system-ui; font-size:14px; color:#0b0616;
+    }
+    h1{
+      font-family:"Press Start 2P", system-ui; font-size:clamp(20px, 3.2vw, 34px); line-height:1.25; margin:0;
+      text-shadow:0 0 8px rgba(56,244,153,.35);
+    }
+    .tagline{ margin:.5rem 0 1.1rem; color:#cfcaf3; opacity:.9; font-size:clamp(13px,1.6vw,16px) }
+
+    .ticker{
+      font-family:"Press Start 2P", system-ui; font-size:12px; letter-spacing:.5px; color:var(--amber);
+      background:linear-gradient(90deg, rgba(255,209,102,.12), transparent);
+      border:1px dashed rgba(255,209,102,.4); border-radius:10px; padding:.75rem 1rem; margin:1rem 0 1.2rem;
+      position:relative; overflow:hidden;
+    }
+    .ticker .dot{ display:inline-block; width:.7em; text-align:center; animation: blink 1.2s infinite steps(2) }
+    @keyframes blink{ 50%{ opacity:.2 } }
+
+    .countdown{
+      display:flex; gap:.6rem; flex-wrap:wrap; margin:1.2rem 0 1.4rem;
+    }
+    .tile{
+      min-width:90px; text-align:center; padding:.7rem .9rem; border-radius:12px; backdrop-filter: blur(6px);
+      background:linear-gradient(180deg, rgba(255,62,165,.10), rgba(56,244,153,.10));
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow:0 6px 18px rgba(0,0,0,.25) inset, 0 2px 16px rgba(56,244,153,.15);
+    }
+    .tile .num{ font-family:"Press Start 2P"; font-size:clamp(18px,3.2vw,26px); color:var(--neon); text-shadow:0 0 8px rgba(56,244,153,.25) }
+    .tile .lab{ font-size:12px; opacity:.8; margin-top:.35rem }
+
+    .buttons{ display:flex; flex-wrap:wrap; gap:.6rem; margin-top:.5rem }
+    .btn{
+      --p: var(--neon);
+      display:inline-flex; align-items:center; gap:.5rem; text-decoration:none; color:var(--white);
+      padding:.75rem 1rem; border-radius:12px; border:1px solid rgba(255,255,255,.15);
+      background:linear-gradient(180deg, rgba(56,244,153,.12), rgba(255,62,165,.08));
+      box-shadow:0 8px 24px rgba(0,0,0,.3), 0 0 16px color-mix(in oklab, var(--p), transparent 80%);
+      transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .btn:hover{ transform:translateY(-2px); border-color: color-mix(in oklab, var(--p), white 15%);
+      box-shadow:0 12px 28px rgba(0,0,0,.35), 0 0 22px color-mix(in oklab, var(--p), transparent 70%);
+    }
+    .btn.ghost{ background:transparent; border-style:dashed; opacity:.9 }
+
+    .meta{ display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-top:1rem; opacity:.85; font-size:13px }
+    .meta a{ color:var(--amber); text-underline-offset:3px }
+
+    @media (max-width:520px){ .logo{display:none} .brand{justify-content:center} .meta{flex-direction:column} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="crt" role="main" aria-labelledby="title">
+      <div class="brand" aria-hidden="true">
+        <div class="logo">TG</div>
+        <div>
+          <h1 id="title">THESYA GABRIELLE</h1>
+          <div class="tagline">AI • Data • Dashboards — Portfolio loading…</div>
         </div>
       </div>
-      <img
-        src="images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="projects-grid">
-        <div class="details-container color-container">
-          <h2 class="experience-sub-title project-title">Sales Management Analysis</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/thesyagabrielle/SalesManagementProject'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <h2 class="experience-sub-title project-title">Fridge Filler Project (Deep Learning)</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='fridge-filler.html'"
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <h2 class="experience-sub-title project-title">My Recipe IOS Application</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/pamz23/myRecipes'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <h2 class="experience-sub-title project-title">Honours Project</h2>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/thesyagabrielle/Honours-Project'"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <h2 class="experience-sub-title project-title">Logistic Regression from Scratch</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href=''">
-              Github
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <h2 class="experience-sub-title project-title">Coming Soon</h2>
-        </div>
+
+      <div class="ticker" aria-live="polite">
+        <span>INSERT COIN</span> <span class="dot">▮</span>
+        <span style="margin-left:.8rem">New site booting with pixel vibes & CRT glow.</span>
       </div>
-      <img
-        src="images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="images/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:thesya.gabrielle@gmail.com">thesya.gabrielle@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="images/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/thesya-evania-gabrielle/">LinkedIn</a></p>
-        </div>
+
+      <section aria-label="Countdown" class="countdown" id="countdown">
+        <div class="tile"><div class="num" id="d">00</div><div class="lab">DAYS</div></div>
+        <div class="tile"><div class="num" id="h">00</div><div class="lab">HOURS</div></div>
+        <div class="tile"><div class="num" id="m">00</div><div class="lab">MIN</div></div>
+        <div class="tile"><div class="num" id="s">00</div><div class="lab">SEC</div></div>
+      </section>
+
+      <div class="buttons">
+        <a class="btn" style="--p: var(--neon)" href="mailto:thesya.gabrielle@gmail.com" aria-label="Email Thesya">✉︎ Email me</a>
+        <a class="btn" style="--p: var(--magenta)" href="#" aria-label="Download CV">⬇︎ Download CV</a>
+        <a class="btn ghost" href="https://github.com/thesyagabrielle" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/thesya-evania-gabrielle/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-    </section>
-    <footer>
-      <p>Copyright &#169; 2024 Thesya Evania Gabrielle. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+      <div class="meta">
+        <div>© <span id="year"></span> Thesya Gabrielle</div>
+        <div>Made with <span style="color:var(--magenta)">♥</span> + caffeine.</div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // ====== Edit this date for your launch ======
+    // Format: YYYY-MM-DDTHH:MM:SS (local time). Example below sets Oct 1, 2025 at 09:00
+    const LAUNCH = new Date('2025-10-01T09:00:00');
+
+    const d=document, $=id=>d.getElementById(id);
+    const dEl=$('d'), hEl=$('h'), mEl=$('m'), sEl=$('s');
+    const yearEl=$('year'); yearEl.textContent=new Date().getFullYear();
+
+    function pad(n){return String(n).padStart(2,'0')}
+    function tick(){
+      const now = new Date();
+      let diff = LAUNCH - now;
+      if(diff < 0){
+        dEl.textContent=hEl.textContent=mEl.textContent=sEl.textContent='00';
+        const t = d.querySelector('.ticker');
+        t.innerHTML = 'We\'re live! <a href="#" style="color: var(--neon); text-decoration: underline;">Enter site</a>'; 
+        clearInterval(iv); return;
+      }
+      const sec = Math.floor(diff/1000)%60;
+      const min = Math.floor(diff/1000/60)%60;
+      const hr  = Math.floor(diff/1000/60/60)%24;
+      const day = Math.floor(diff/1000/60/60/24);
+      dEl.textContent=pad(day); hEl.textContent=pad(hr); mEl.textContent=pad(min); sEl.textContent=pad(sec);
+    }
+    const iv=setInterval(tick,1000); tick();
+  </script>
+</body>
 </html>
